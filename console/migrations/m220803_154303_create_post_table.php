@@ -15,7 +15,7 @@ class m220803_154303_create_post_table extends Migration
         $this->createTable('{{%post}}', [
             'id' => $this->primaryKey(),
             'title' => $this->string(512),
-            'body' => 'LONGTEXT',
+            'body' => $this->text(),
             'created_at' => $this->integer(),
             'updated_at' => $this->integer(),
             'created_by' => $this->integer()
